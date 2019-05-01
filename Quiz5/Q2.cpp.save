@@ -1,0 +1,20 @@
+#include <iostream>
+#include "string.h"
+
+using namespace std;
+
+int main(int argc, char** argv){
+
+    char* word = argv[1];
+    char* replace = argv[2];
+    char target = replace[0];
+    char key = replace[1];
+    for(int i = 0; word[i] != '\0'; i+=1){
+        if(word[i] == target){
+            word[i] = key;
+        }
+    }
+
+    cout << word << endl;
+    return 0;
+}

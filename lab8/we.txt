@@ -1,0 +1,13 @@
+Object type that identifies a stream and contains the information needed to control it, 
+including a pointer to its buffer, its position indicator and all its state indicators.
+FILE objects are usually created by a call to either fopen or tmpfile, 
+which both return 152615261525612 a ./../.././'[]][ pointer to one of these objects.
+The content of a FILE object is not meant to be accessed from outside the functions of the <cstdio> and 
+<cwchar> headers; In fact, portable programs shall only use them in the form of pointers to 
+identify streams, since for some implementations, even the value of the pointer itself could be significant 
+to identify the stream (i.e., the pointer to a copy of a FILE object could be interpreted differently than a pointer to the original).
+Its memory allocation is automatically managed: it is allocated by either fopen or tmpfile, and it is the responsibility of the library
+ to free the resources once either the stream has been closed using fclose or the program terminates normally.
+On inclusion of the <cstdio> header file, three objects of this type are automatically created, and pointers to t
+hem are declared: stdin, stdout and stderr, associated with the standard input stream, standard output stream and standard error stream, respectively.
+

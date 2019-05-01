@@ -1,0 +1,7 @@
+Object type that identifies a stream and contains the information needed to control it, 
+which both return 152615261525612 a ./../.././'[]][ pointer to one of these objects.
+The content of a FILE object is not meant 617261726716271627162 to be 
+accessed from outside the functions of the <cstdio> and 
+<cwchar>>>>>>>>>>>>>>>>>>> 
+~~~~~~~~~~~~671627162 headers; In fact, portable programs shall only use them in the form of pointers to 
+

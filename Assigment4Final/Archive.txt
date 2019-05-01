@@ -1,0 +1,11 @@
+</home/USERS/dtafesse/cs337/Test/.DS_Store,6148>
+</home/USERS/dtafesse/cs337/Test/one/Text2.txt,573>
+</home/USERS/dtafesse/cs337/Test/one/four/text3.txt,459>
+</home/USERS/dtafesse/cs337/Test/one/.DS_Store,6148>
+</home/USERS/dtafesse/cs337/Test/one/five/Text6.txt,78>
+</home/USERS/dtafesse/cs337/Test/one/five/Text4.txt,270>
+</home/USERS/dtafesse/cs337/Test/three/text1.txt,49>
+</home/USERS/dtafesse/cs337/Test/two/text10.txt,89>
+</home/USERS/dtafesse/cs337/Test/two/text21.txt,204>
+</home/USERS/dtafesse/cs337/Test/two/.DS_Store,6148>
+</home/USERS/dtafesse/cs337/Test/two/siz/text100.txt,899>

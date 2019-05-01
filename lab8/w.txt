@@ -1,0 +1,39 @@
+include fcntlh
+include errnoh
+include unistdh
+include stdioh
+include ctypeh
+include iostream
+include stringh
+
+using namespace std
+
+int mainint argc char argv
+    
+    char buffer 
+    
+    int fileDes  openargv ORDONLY
+    int writeDest  openargv OWRONLY  OCREAT   is file premission to create a file if it is not permitted
+    
+    if fileDes  
+        return 
+    
+    if writeDest  
+        return 
+    
+    ssizet bytesRead bytesWritten  
+    
+    whilereadfileDes buffer
+	int count  
+	whileisalphabuffercount  isspacebuffercount
+	
+	  writewriteDest buffer  count 
+	  count  
+	
+    
+    
+    close fileDes
+    close writeDest
+    
+    return 
+

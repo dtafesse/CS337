@@ -1,0 +1,10 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+  srand(10); //set the starting value (or seed) of the sequence of random numbers
+  cout << rand() << " "<<  rand() << " "<< rand() << endl; //print the first 3 numbers in the sequence
+  return 0;
+}
+

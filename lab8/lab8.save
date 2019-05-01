@@ -1,0 +1,30 @@
+#include <fcntl.h>
+#include <errno.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <ctype.h>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv){
+    
+    unsigned char* buffer = new unsigned char[64];
+    
+    int fileDes = open(argv[1], O_RDONLY);
+    int writeDest = open(argv[2], O_WRONLY | O_CREAT);
+    
+    if (fileDes == -1){
+        return -1;
+    }
+    if (writeDest == -1){
+        return -1;
+    }
+    int bytesRead, bytesWritten = 0;
+    while((bytesRead = read(fileDes, buffer, 64) > 0)){
+        if(isalpha(bytesRead)){
+            bytesWritten = write(writeDest, buffer, bytesRead);
+        }
+    }
+    return 0;
+}

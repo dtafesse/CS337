@@ -1,0 +1,39 @@
+#include <fcntl.h>
+#include <errno.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <ctype.h>
+#include <iostream>
+#include "string.h"
+
+using namespace std;
+
+int main(int argc, char** argv){
+    
+    char buffer [64];
+    
+    int fileDes = open(argv[1], O_RDONLY);
+    int writeDest = open(argv[2], O_WRONLY | O_CREAT , 0664); // 0664 is file premission to create a file if nots permitted
+    
+    if (fileDes == -1){
+        return -1;
+    }
+    if (writeDest == -1){
+        return -1;
+    }
+    ssize_t bytesRead, bytesWritten = 0;
+    
+    while(read(fileDes, &buffer,1)){
+	int count = 0;
+	while(isalpha(buffer[count]) || isspace(buffer[count]))
+	{
+	  write(writeDest, &buffer, 1);
+	  count += 1;
+	}
+    }
+    
+    close (fileDes);
+    close (writeDest);
+    
+    return 0;
+}

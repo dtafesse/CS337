@@ -4,7 +4,8 @@
 //
 //  Created by Dawit Tafesse on 2/16/17.
 //  Copyright © 2017 Dawit Tafesse. All rights reserved.
-#include "Header.h"
+//
+#include "main.h"
 
 using namespace std;
 

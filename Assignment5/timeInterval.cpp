@@ -51,8 +51,9 @@ void TimeInterval::output(ostream& outs) const{
     DigitalTime start = this->getStart();
     DigitalTime end = this->getEnd();
 
-    cout << start.getHour() << ":" << start.getMinute() << " - "
-            << end.getHour() << ":" << end.getMinute() << endl;
+
+    outs << start.getHour() << ":" << start.getMinute() << "-"
+    << end.getHour() << ":" << end.getMinute();
 
 }
 //Returns true if a and b overlap, false otherwise

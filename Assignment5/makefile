@@ -1,7 +1,7 @@
 a.out: digtalTime.o timeInterval.o DaysOfWeek.o Course.o main.o
-	g++ digialTime.o timeInterval.o DaysOfWeek.o Course.o main.o -o a.out
+	g++ digtalTime.o timeInterval.o DaysOfWeek.o Course.o main.o -o a.out
 digtalTime.o: digtalTime.h digtalTime.cpp
-	g++ -c digialTime.cpp
+	g++ -c digtalTime.cpp
 timeInterval.o: timeInterval.h timeInterval.cpp digtalTime.h
 	g++ -c timeInterval.cpp
 DaysOfWeek.o: DaysOfWeek.h DaysOfWeek.cpp

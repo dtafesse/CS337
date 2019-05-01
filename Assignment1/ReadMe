@@ -1,0 +1,27 @@
+Homework 1
+
+It very simple AI program that reads in input from a text and asks user what troubles them.
+
+The text file needs to be in the following format. 
+:keyword
+Response1
+Response2
+Response3
+etc...
+:keyword
+Response1
+Response2
+Response3
+etc...
+
+This program will work for any amount of keywords and each keyword can have any amount of responses, as long as each new response comes on a new line as shown above. Each keyword has to have a ':' as its first letter.
+
+For testing, all one has to do is rename the private instance felid "FileName" to whatever textfile one wants to test with. 
+
+Program might crash if the testing text file is not placed in the proper folder. If this error comes up "FileNotFoundEception", make sure to go to readText() and then adjust the location of the FileName as needed in call to "new FileReader("")." 
+"BufferedReader in = new BufferedReader(new FileReader(FileName))"
+
+
+If any time tester wants to quit program, type "q".
+
+Other than that, this program should be free from other errors.

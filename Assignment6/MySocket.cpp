@@ -15,7 +15,6 @@ MySocket::MySocket(short p){
         exit(1);
     }
     
-    
     /* Initialize socket structure */
     bzero((char*) &(this->sock), sizeof(this->sock));
     this->portNumber = p;
@@ -92,8 +91,8 @@ char* MyConnection::reads(char *buffer){
 int MyConnection::writes(string word){
     char* buf = new char[word.length()+1];
     bzero(buf, word.length()+1);
-    memcpy(buf, word.c_str(), word.length()+1);
-    
+    memcpy(buf, word.c_str(), word.length()+1); 
+   
     int n = write(this->connectionFD,buf,word.length());
     if (n < 0) {
         perror("ERROR Writing from socket");
@@ -129,9 +128,8 @@ void MyConnection::closes(){
 }
 
 MyConnection& operator<<(MyConnection& me, const string& s){
-
     char* copy;
-    strcpy(copy, s.c_str());
+    strcpy(copy,s.c_str());
     me.reads(copy);
     return me;
 }
